@@ -1,0 +1,33 @@
+body {
+    overflow-x: hidden;
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+
+.container {
+    width: 100vw;
+    height: 98vh;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+
+.salesFunctions {
+    width: 90%;
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.appTitle {
+    margin: 0;
+    font-size: 2em;
+    color: #000;
+}
+
+
