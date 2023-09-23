@@ -62,7 +62,7 @@ class App extends Component {
       } else {
         sortBy = shoppingitems.sort((a,b) => a.id - b.id);
       }
-      
+
       return (
       <>
         <div className='container tc'>
@@ -72,6 +72,9 @@ class App extends Component {
               <h3 className='appTitle'>PC Part Online Shop</h3>
             </div>
             <ItemList items={(searchfield !== '') ? filteredItems : sortBy}/>  
+        </div>
+        <div className="footer">
+            <p> Teodor Ignat &copy; Zero To Mastery Student | The Complete Web Developer Course</p>
         </div>
       </>
     );
