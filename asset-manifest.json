@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/practice-react-app/static/css/main.f7a548e8.css",
-    "main.js": "/practice-react-app/static/js/main.3185d92d.js",
+    "main.css": "/practice-react-app/static/css/main.a377bf5d.css",
+    "main.js": "/practice-react-app/static/js/main.2a1a1aa5.js",
     "static/js/787.ace3c87d.chunk.js": "/practice-react-app/static/js/787.ace3c87d.chunk.js",
     "index.html": "/practice-react-app/index.html",
-    "main.f7a548e8.css.map": "/practice-react-app/static/css/main.f7a548e8.css.map",
-    "main.3185d92d.js.map": "/practice-react-app/static/js/main.3185d92d.js.map",
+    "main.a377bf5d.css.map": "/practice-react-app/static/css/main.a377bf5d.css.map",
+    "main.2a1a1aa5.js.map": "/practice-react-app/static/js/main.2a1a1aa5.js.map",
     "787.ace3c87d.chunk.js.map": "/practice-react-app/static/js/787.ace3c87d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7a548e8.css",
-    "static/js/main.3185d92d.js"
+    "static/css/main.a377bf5d.css",
+    "static/js/main.2a1a1aa5.js"
   ]
 }
