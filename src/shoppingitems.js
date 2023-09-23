@@ -5,7 +5,7 @@ export const shoppingItems = [
     category: 'Video Cards',
     itemName: 'NVIDIA RTX 3070',
     brand: 'MSI',
-    price: 500 + '$',
+    price: 500,
     stock: true
   },
   {
@@ -14,7 +14,7 @@ export const shoppingItems = [
     itemName: 'NVIDIA GTX 1080 TI',
     category: 'Video Cards',
     brand: 'EVGA',
-    price: 350 + '$',
+    price: 350,
     stock: false
   },
   {
@@ -23,7 +23,7 @@ export const shoppingItems = [
     itemName: 'Core i7 13700KF, 3.5GHZ',
     category: 'CPU',
     brand: 'Intel',
-    price: 400 + '$',
+    price: 400,
     stock: true
   },
   {
@@ -32,7 +32,7 @@ export const shoppingItems = [
     itemName: 'Ryzen 7 5800X3D',
     category: 'CPU',
     brand: 'AMD',
-    price: 255 + '$',
+    price: 255,
     stock: true
   },
   {
@@ -41,7 +41,7 @@ export const shoppingItems = [
     category: 'Motherboards',
     itemName: 'Z790-E WIFI Rog Strix ',
     brand: 'Asus',
-    price: 650 + '$',
+    price: 650,
     stock: false
   },
   {
@@ -50,7 +50,7 @@ export const shoppingItems = [
     category: 'Memory',
     itemName: 'Vengeance DDR4 32GB(2x16GB) 3200MHZ',
     brand: 'Corsair',
-    price: 80 + '$',
+    price: 80,
     stock: true
   },
   {
@@ -59,7 +59,7 @@ export const shoppingItems = [
     category: 'Memory',
     itemName: 'Fury Beast DDR5 16GB(1x16GB) 3666MHZ ',
     brand: 'Kingston',
-    price: 120 + '$',
+    price: 120,
     stock: true
   },
   {
@@ -68,7 +68,7 @@ export const shoppingItems = [
     category: 'Memory',
     itemName: 'Vengeance RGB PRO DDR4 32GB(2x16GB) 3600MHZ',
     brand: 'Corsair',
-    price: 90 +'$',
+    price: 90,
     stock: true
   },
   {
@@ -77,7 +77,7 @@ export const shoppingItems = [
     category: 'PC Case',
     itemName: 'MAG FORGE M100 Mid-Tower',
     brand: 'MSI',
-    price:  60 + '$',
+    price:  60,
     stock: true
   },
   {
@@ -86,7 +86,7 @@ export const shoppingItems = [
     category: 'PC Case',
     itemName: 'H5 FLOW ATX Mid-Tower',
     brand: 'NZXT',
-    price: 80 + '$',
+    price: 80,
     stock: true
   }
 ];

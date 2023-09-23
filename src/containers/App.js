@@ -11,7 +11,8 @@ class App extends Component {
         super();
         this.state = {
             shoppingitems: shoppingItems,
-            searchfield: ''
+            searchfield: '',
+            sortby: 'default'
           }
         }
         
@@ -20,21 +21,57 @@ class App extends Component {
       this.setState({searchfield: event.target.value});
     }
 
+    handleSortBy = (event) => {
+      this.setState({sortby: event.target.value})
+    }
+
     render() {
-      const { shoppingitems, searchfield }  = this.state;
+      const { shoppingitems, searchfield, sortby }  = this.state;
       const filteredItems = shoppingitems.filter(item => {
         return item.itemName.toLowerCase().includes(searchfield.toLowerCase());
-      })
+      });
+      let sortBy = filteredItems;
 
+      if (sortby !== 'default') {
+        if (sortby === 'price') {
+          sortBy = shoppingitems.sort((a,b) => a.price - b.price)
+        }
+        if (sortby === 'category') {
+          sortBy = shoppingitems.sort((a,b) => {
+            if (a.category < b.category) {
+              return -1
+            }
+            if (a.category > b.category) {
+              return 1
+            }
+            return 0;
+          })
+        }
+        if (sortby === 'brand') {
+          sortBy = shoppingitems.sort((a,b) => {
+            if (a.brand < b.brand) {
+              return -1
+            }
+            if (a.brand > b.brand) {
+              return 1
+            }
+            return 0;
+          })
+        }
+
+      } else {
+        sortBy = shoppingitems.sort((a,b) => a.id - b.id);
+      }
+      
       return (
       <>
         <div className='container tc'>
             <div className='salesFunctions'>
               <SearchBar filterByName={this.onSearchChange}/>
-              <SortingFn />
+              <SortingFn sortByFn={this.handleSortBy} />
               <h3 className='appTitle'>PC Part Online Shop</h3>
             </div>
-            <ItemList items={filteredItems}/>  
+            <ItemList items={(searchfield !== '') ? filteredItems : sortBy}/>  
         </div>
       </>
     );

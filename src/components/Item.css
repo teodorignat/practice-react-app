@@ -88,3 +88,13 @@
     cursor: pointer;
     transition: all 0.1s ease-in;
 }
+
+@media only screen and (max-width: 450px) {
+    .addToCartBtn {
+        width: 100%;
+    }
+
+   .wrapper {
+    width: 115%;
+   }
+}

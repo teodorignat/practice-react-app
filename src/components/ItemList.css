@@ -16,3 +16,13 @@
     gap: 1em;
     justify-items: center;
 }
+
+@media only screen and (max-width: 450px) {
+    .item-wrapper {
+        width: 95vw;
+    }
+
+   .items {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   }
+}
